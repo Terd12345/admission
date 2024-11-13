@@ -1,0 +1,77 @@
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.profile-info {
+    margin-bottom: 20px;
+}
+.profile-info p {
+    margin: 0;
+}
+
+
+/* Button Styles */
+.btn-success {
+background-color: #27ae60 !important; /* Strong green */
+border-color: #27ae60 !important;
+color: #fff !important; /* White text for buttons */
+}
+
+.btn-warning {
+background-color: #2980b9 !important; /* Strong blue */
+border-color: #2980b9 !important;
+color: #fff !important;
+}
+
+.btn-danger {
+background-color: #e74c3c !important; /* Strong red */
+border-color: #e74c3c !important;
+color: #fff !important;
+}
+
+
+/* Restore breadcrumb styling */
+ul.breadcrumb {
+padding: 10px 1px;
+list-style: none;
+background-color: #f9f9f9;
+display: flex;
+align-items: center;
+border-radius: 4px;
+margin-bottom: 20px;
+}
+
+ul.breadcrumb li {
+display: inline;
+font-size: 18px;
+}
+
+ul.breadcrumb li a {
+/* color: #007bff; */
+text-decoration: none;
+padding: 0 5px;
+}
+
+ul.breadcrumb li a:hover {
+color: #0056b3;
+text-decoration: underline;
+}
+
+ul.breadcrumb li i {
+margin: 0 10px;
+color: #6c757d;
+}
+
+ul.breadcrumb li:last-child a {
+color: #6c757d;
+pointer-events: none;
+}
+
+ul.breadcrumb li:last-child a.active {
+font-weight: bold;
+}

@@ -1,0 +1,80 @@
+/* Adjusting table header colors */
+#applicantsTable thead th {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 12px;
+}
+
+/* Alternating row colors */
+#applicantsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#applicantsTable tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for table rows */
+#applicantsTable tbody tr:hover {
+    background-color: #d1d8e0;
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: #27ae60 !important;
+    border-color: #27ae60 !important;
+    color: #fff !important;
+}
+
+.btn-warning {
+    background-color: #2980b9 !important;
+    border-color: #2980b9 !important;
+    color: #fff !important;
+}
+
+.btn-danger {
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+    color: #fff !important;
+}
+
+/* Restore breadcrumb styling */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    /* background-color: #f9f9f9; */
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+ul.breadcrumb li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+ul.breadcrumb li i {
+    margin: 0 10px;
+    color: #6c757d;
+}
+
+ul.breadcrumb li:last-child a {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+ul.breadcrumb li:last-child a.active {
+    font-weight: bold;
+}

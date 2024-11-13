@@ -1,0 +1,132 @@
+body{
+    /* margin-bottom: 15%; */
+}
+
+
+#applicantsTable thead {
+        width: calc(100% - 17%);
+    }
+
+    /* Adjusting table header colors */
+    #applicantsTable thead th {
+        background-color: #34495e; 
+        color: #ecf0f1; /* Lighter text color */
+        padding: 12px;
+        margin-bottom: 15%;
+   }
+
+    /* Alternating row colors */
+    #applicantsTable tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Light grey for even rows */
+    }
+
+    #applicantsTable tbody tr:nth-child(odd) {
+        background-color: #ffffff; /* White for odd rows */
+    }
+
+    /* Row text color */
+    #applicantsTable tbody tr td {
+        color: #2c3e50; /* Darker text color for rows */
+        padding: 10px;
+    }
+
+    /* Hover effect for table rows */
+    #applicantsTable tbody tr:hover {
+        background-color: #d1d8e0; /* Light blue-grey on hover */
+    }
+
+    /* Button Styles */
+    .btn-success {
+        background-color: #27ae60 !important; /* Strong green */
+        border-color: #27ae60 !important;
+        color: #fff !important; /* White text for buttons */
+    }
+
+    .btn-warning {
+        background-color: #2980b9 !important; /* Strong blue */
+        border-color: #2980b9 !important;
+        color: #fff !important;
+    }
+
+    .btn-danger {
+        background-color: #e74c3c !important; /* Strong red */
+        border-color: #e74c3c !important;
+        color: #fff !important;
+    }
+
+
+    /* Restore breadcrumb styling */
+    ul.breadcrumb {
+        padding: 10px 1px;
+        list-style: none;
+        background-color: #f9f9f9;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+
+    ul.breadcrumb li a {
+        /* color: #007bff; */
+        text-decoration: none;
+        padding: 0 5px;
+    }
+
+    ul.breadcrumb li a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    ul.breadcrumb li i {
+        margin: 0 10px;
+        color: #6c757d;
+    }
+
+    ul.breadcrumb li:last-child a {
+        color: #6c757d;
+        pointer-events: none;
+    }
+
+    ul.breadcrumb li:last-child a.active {
+        font-weight: bold;
+    }
+
+
+    .table-responsive{
+        overflow-x: hidden;
+    }
+
+
+
+
+    .action-buttons {
+        display: flex;
+        gap: 10px; /* Adjust the gap between buttons */
+        justify-content: center; /* Center align buttons */
+    }
+    
+    .action-buttons button {
+        display: inline-block;
+        width: 40px; /* Adjust width if needed */
+        height: 40px; /* Adjust height if needed */
+        padding: 5px;
+        margin: 0;
+        text-align: center;
+        line-height: 30px; /* Adjust for button size */
+    }
+    
+    /* Responsive table improvements */
+    @media (max-width: 768px) {
+        .table-responsive {
+            overflow-x: auto; /* Enable horizontal scroll for smaller screens */
+        }
+        
+        .action-buttons {
+            flex-direction: column; /* Stack buttons on smaller screens */
+        }
+    }
